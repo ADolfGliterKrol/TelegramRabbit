@@ -1,0 +1,99 @@
+html{
+    background-image: url(FON.png);
+    background-size: cover;
+
+}
+
+.BlueBlock{
+    background-color: #181d40e4;
+    height: 1000px;
+    width: 800px;
+    border-radius: 30px;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.hello{
+    color: rgba(255, 255, 255, 0.76);
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-family: "Pixelify Sans", sans-serif;
+    animation: textAnimation 2s infinite alternate;
+}
+img{
+    width: 70px;
+}
+
+@keyframes textAnimation {
+    from {
+        color: rgba(255, 255, 255, 0.436);
+        font-size: 100px;
+    }
+    to {
+        color: white;
+        font-size: 110px;
+    }
+  }
+
+  .link{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+
+.mess{
+    background-color: rgba(255, 255, 255, 0.256);
+    width: 600px;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 100px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #3498db; /* Цвет рамки */
+    color: #3498db; /* Цвет текста */
+    background-color: #1317295e; /* Цвет фона */
+    border-radius: 50px; /* Скругление углов */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    font-family: "Pixelify Sans", sans-serif;
+  }
+  
+  .button:hover {
+    background-color: #1a213859; /* Цвет фона при наведении */
+    color: white; /* Цвет текста при наведении */
+  }
+
+  .logoR{
+    background-color: #3498db63;
+    height: 500px;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    border-radius: 50%
+  }
+
+  .logo{
+    height: 500px;
+    width: 500px;
+  }
