@@ -1,10 +1,9 @@
-html{
+html {
     background-image: url(FON.png);
     background-size: cover;
-
 }
 
-.BlueBlock{
+.BlueBlock {
     background-color: #181d40e4;
     height: 600px;
     width: 400px;
@@ -13,10 +12,9 @@ html{
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 
-.hello{
+.hello {
     color: rgba(255, 255, 255, 0.76);
     position: fixed;
     top: 50px;
@@ -25,7 +23,8 @@ html{
     font-family: "Pixelify Sans", sans-serif;
     animation: textAnimation 2s infinite alternate;
 }
-img{
+
+img {
     width: 40px;
 }
 
@@ -38,16 +37,16 @@ img{
         color: white;
         font-size: 60px;
     }
-  }
+}
 
-  .link{
+.link {
     position: fixed;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 50%;
-  }
+}
 
-.mess{
+.mess {
     background-color: rgba(255, 255, 255, 0.256);
     width: 350px;
     height: 50px;
@@ -56,11 +55,12 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50px;
-  }
-  .button {
+}
+
+.button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 60px;
+    font-size: 20px; /* Уменьшил размер шрифта для кнопки */
     text-align: center;
     text-decoration: none;
     border: 2px solid #3498db; /* Цвет рамки */
@@ -74,14 +74,14 @@ img{
     left: 50%;
     bottom: 10%;
     font-family: "Pixelify Sans", sans-serif;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background-color: #1a213859; /* Цвет фона при наведении */
     color: white; /* Цвет текста при наведении */
-  }
+}
 
-  .logoR{
+.logoR {
     background-color: #3498db63;
     height: 300px;
     width: 300px;
@@ -89,10 +89,67 @@ img{
     position: fixed;
     left: 50%;
     top: 30%;
-    border-radius: 50%
-  }
+    border-radius: 50%;
+}
 
-  .logo{
+.logo {
     height: 300px;
     width: 300px;
-  }
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 1200px) {
+    .BlueBlock {
+        height: 500px;
+        width: 350px;
+    }
+    .hello {
+        font-size: 40px;
+    }
+    .button {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .BlueBlock {
+        height: 400px;
+        width: 300px;
+    }
+    .hello {
+        font-size: 35px;
+    }
+    .button {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .BlueBlock {
+        height: 300px;
+        width: 250px;
+    }
+    .hello {
+        font-size: 30px;
+    }
+    .button {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .BlueBlock {
+        height: 200px;
+        width: 200px;
+    }
+    .hello {
+        font-size: 25px;
+    }
+    .button {
+        font-size: 25px;
+    }
+    .logoR, .logo {
+        height: 200px;
+        width: 200px;
+    }
+}
