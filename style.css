@@ -1,6 +1,20 @@
 html {
     background-image: url(FON.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .BlueBlock {
@@ -8,18 +22,18 @@ html {
     height: 600px;
     width: 400px;
     border-radius: 30px;
-    position: fixed;
-    top: 55%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .hello {
     color: rgba(255, 255, 255, 0.76);
-    position: fixed;
+    position: absolute;
     top: 50px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     font-family: "Pixelify Sans", sans-serif;
     animation: textAnimation 2s infinite alternate;
 }
@@ -40,9 +54,9 @@ img {
 }
 
 .link {
-    position: fixed;
+    position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     top: 50%;
 }
 
@@ -50,45 +64,45 @@ img {
     background-color: rgba(255, 255, 255, 0.256);
     width: 350px;
     height: 50px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     border-radius: 50px;
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 20px; /* Уменьшил размер шрифта для кнопки */
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
-    border: 2px solid #3498db; /* Цвет рамки */
-    color: #3498db; /* Цвет текста */
-    background-color: #1317295e; /* Цвет фона */
-    border-radius: 50px; /* Скругление углов */
+    border: 2px solid #3498db;
+    color: #3498db;
+    background-color: #1317295e;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    transform: translate(-50%, -50%);
-    position: fixed;
+    position: absolute;
     left: 50%;
     bottom: 10%;
+    transform: translateX(-50%);
     font-family: "Pixelify Sans", sans-serif;
 }
 
 .button:hover {
-    background-color: #1a213859; /* Цвет фона при наведении */
-    color: white; /* Цвет текста при наведении */
+    background-color: #1a213859;
+    color: white;
 }
 
 .logoR {
     background-color: #3498db63;
     height: 300px;
     width: 300px;
-    transform: translate(-50%, -50%);
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 30%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
 }
 
@@ -107,7 +121,7 @@ img {
         font-size: 40px;
     }
     .button {
-        font-size: 40px;
+        font-size: 18px;
     }
 }
 
@@ -120,7 +134,7 @@ img {
         font-size: 35px;
     }
     .button {
-        font-size: 35px;
+        font-size: 16px;
     }
 }
 
@@ -133,7 +147,7 @@ img {
         font-size: 30px;
     }
     .button {
-        font-size: 30px;
+        font-size: 14px;
     }
 }
 
@@ -146,7 +160,7 @@ img {
         font-size: 25px;
     }
     .button {
-        font-size: 25px;
+        font-size: 12px;
     }
     .logoR, .logo {
         height: 200px;
