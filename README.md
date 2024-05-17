@@ -1,2 +1,2 @@
 # TelegramRabbit
-https://adolfgliterkrol.github.io/TelegramRabbit
+https://github.com/TelegramRabbit/TelegramRabbit.git
