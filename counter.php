@@ -1,25 +1,17 @@
 <?php
+// Имя файла для хранения счетчика
+$counterFile = 'counter.txt';
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Путь к файлу счетчика
-$file = 'counter.txt';
-
-// Проверка, существует ли файл счетчика, если нет - создаем
-if (!file_exists($file)) {
-    file_put_contents($file, 0);
+// Проверяем существует ли файл, если нет - создаем его и устанавливаем начальное значение счетчика
+if (!file_exists($counterFile)) {
+    file_put_contents($counterFile, '0');
 }
 
-// Чтение текущего значения счетчика
-$counter = (int)file_get_contents($file);
+// Увеличиваем значение счетчика на 1
+$currentCount = (int)file_get_contents($counterFile);
+$currentCount++;
+file_put_contents($counterFile, $currentCount);
 
-// Увеличение счетчика на 1
-$counter++;
-
-// Запись нового значения счетчика в файл
-file_put_contents($file, $counter);
-
-// Вывод значения счетчика (опционально)
-echo "Количество посещений: " . $counter;
+// Выводим количество посещений
+echo "Количество посещений: $currentCount";
 ?>
