@@ -1,7 +1,7 @@
 html {
     background-image: url(FON.png);
     background-size: cover;
-    background-attachment: fixed; /* Добавлено, чтобы фон оставался фиксированным */
+    background-attachment: fixed;
 }
 
 .BlueBlock {
@@ -62,7 +62,7 @@ img {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 20px; /* Уменьшено для мобильных устройств */
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
     border: 2px solid #3498db;
@@ -110,6 +110,8 @@ img {
     .hello {
         top: 20px;
         font-size: 24px;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
     .mess {
