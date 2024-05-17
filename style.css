@@ -1,10 +1,10 @@
-html{
+html {
     background-image: url(FON.png);
     background-size: cover;
-
+    background-attachment: fixed; /* Добавлено, чтобы фон оставался фиксированным */
 }
 
-.BlueBlock{
+.BlueBlock {
     background-color: #181d40e4;
     height: 600px;
     width: 400px;
@@ -13,10 +13,9 @@ html{
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 
-.hello{
+.hello {
     color: rgba(255, 255, 255, 0.76);
     position: fixed;
     top: 50px;
@@ -24,8 +23,10 @@ html{
     transform: translate(-50%, -50%);
     font-family: "Pixelify Sans", sans-serif;
     animation: textAnimation 2s infinite alternate;
+    text-align: center;
 }
-img{
+
+img {
     width: 40px;
 }
 
@@ -38,16 +39,16 @@ img{
         color: white;
         font-size: 60px;
     }
-  }
+}
 
-  .link{
+.link {
     position: fixed;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 50%;
-  }
+}
 
-.mess{
+.mess {
     background-color: rgba(255, 255, 255, 0.256);
     width: 350px;
     height: 50px;
@@ -56,17 +57,18 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50px;
-  }
-  .button {
+}
+
+.button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 60px;
+    font-size: 20px; /* Уменьшено для мобильных устройств */
     text-align: center;
     text-decoration: none;
-    border: 2px solid #3498db; /* Цвет рамки */
-    color: #3498db; /* Цвет текста */
-    background-color: #1317295e; /* Цвет фона */
-    border-radius: 50px; /* Скругление углов */
+    border: 2px solid #3498db;
+    color: #3498db;
+    background-color: #1317295e;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     transform: translate(-50%, -50%);
@@ -74,14 +76,14 @@ img{
     left: 50%;
     bottom: 10%;
     font-family: "Pixelify Sans", sans-serif;
-  }
-  
-  .button:hover {
-    background-color: #1a213859; /* Цвет фона при наведении */
-    color: white; /* Цвет текста при наведении */
-  }
+}
 
-  .logoR{
+.button:hover {
+    background-color: #1a213859;
+    color: white;
+}
+
+.logoR {
     background-color: #3498db63;
     height: 300px;
     width: 300px;
@@ -89,10 +91,48 @@ img{
     position: fixed;
     left: 50%;
     top: 30%;
-    border-radius: 50%
-  }
+    border-radius: 50%;
+}
 
-  .logo{
+.logo {
     height: 300px;
     width: 300px;
-  }
+}
+
+/* Медиа-запросы для адаптации под мобильные устройства */
+@media (max-width: 600px) {
+    .BlueBlock {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .hello {
+        top: 20px;
+        font-size: 24px;
+    }
+
+    .mess {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        bottom: 20px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 10px 15px;
+        bottom: 5%;
+    }
+
+    .logoR {
+        width: 200px;
+        height: 200px;
+        top: 20%;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+}
