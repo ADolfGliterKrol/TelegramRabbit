@@ -1,7 +1,7 @@
 html {
     background-image: url(FON.png);
     background-size: cover;
-    background-attachment: fixed; /* Добавлено, чтобы фон оставался фиксированным */
+    background-attachment: fixed;
 }
 
 .BlueBlock {
@@ -13,17 +13,21 @@ html {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .hello {
     color: rgba(255, 255, 255, 0.76);
-    position: fixed;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: "Pixelify Sans", sans-serif;
     animation: textAnimation 2s infinite alternate;
     text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
 img {
@@ -42,27 +46,24 @@ img {
 }
 
 .link {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
+    margin-top: 20px;
 }
 
 .mess {
     background-color: rgba(255, 255, 255, 0.256);
     width: 350px;
     height: 50px;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 20px; /* Уменьшено для мобильных устройств */
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
     border: 2px solid #3498db;
@@ -71,10 +72,7 @@ img {
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    left: 50%;
-    bottom: 10%;
+    margin-top: 20px;
     font-family: "Pixelify Sans", sans-serif;
 }
 
@@ -92,11 +90,14 @@ img {
     left: 50%;
     top: 30%;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
 }
 
 /* Медиа-запросы для адаптации под мобильные устройства */
@@ -105,29 +106,31 @@ img {
         width: 90%;
         height: auto;
         padding: 20px;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .hello {
-        top: 20px;
         font-size: 24px;
+        margin-bottom: 10px;
     }
 
     .mess {
-        width: 80%;
+        width: 90%;
         height: auto;
         padding: 10px;
-        bottom: 20px;
+        margin-top: 10px;
     }
 
     .button {
         font-size: 18px;
         padding: 10px 15px;
-        bottom: 5%;
+        margin-top: 10px;
     }
 
     .logoR {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         top: 20%;
     }
 
@@ -136,3 +139,4 @@ img {
         height: auto;
     }
 }
+``
